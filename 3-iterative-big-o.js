@@ -1,4 +1,5 @@
 //Exercise 1 - Counting Sheep
+// O(N)
 function countSheepLoop(num) {
   for (let i = num; i > 0; i--) {
     console.log(`counting sheeps ${i}`);
@@ -7,6 +8,7 @@ function countSheepLoop(num) {
 countSheepLoop(10);
 
 /*====================================================================*/
+// O(N)
 function double_all(arr) {
   var ret = Array(arr.length);
   for (var i = 0; i < arr.length; ++i) {
@@ -18,6 +20,7 @@ let arr = [10, 4, 5, 2, 1];
 console.log(double_all(arr));
 
 /*====================================================================*/
+// O(N)
 function reverse_tail(str) {
   var accumulator = "";
   while (str !== "") {
@@ -28,6 +31,7 @@ function reverse_tail(str) {
 }
 
 /*====================================================================*/
+// O(N)
 function triangle(n) {
   var tot = 0;
   for (var i = 1; i <= n; ++i) {
@@ -36,6 +40,7 @@ function triangle(n) {
   return tot;
 }
 /*====================================================================*/
+// O(N)
 function split(str, sep) {
   var ret = [];
   while (true) {
@@ -49,6 +54,7 @@ function split(str, sep) {
 }
 
 /*=================================================================================*/
+// O(log(N))
 function convertToBinaryIter(num) {
   var binary = "";
   while (num > 0) {
@@ -61,6 +67,7 @@ function convertToBinaryIter(num) {
 console.log(convertToBinaryIter(124)); //1111100
 
 /*=================================================================================*/
+// O(N)
 function factorialIterative(number) {
   let fact = 1;
   for (let i = 1; i <= number; i++) {
@@ -71,7 +78,7 @@ function factorialIterative(number) {
 console.log(factorialIterative(5));
 
 /*=================================================================================*/
-
+// O(N)
 function fibonacciIterative(number) {
   let num1 = 1;
   let num2 = 0;
@@ -86,6 +93,7 @@ function fibonacciIterative(number) {
 }
 
 //******** ES6 makes it a bit easier*****
+// O(N)
 function fibonacciIterative2(number) {
   let [num1, num2] = [1, 0];
   while (number-- > 0) {
